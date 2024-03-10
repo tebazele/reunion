@@ -1,0 +1,307 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: block;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0;
+}
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 0;
+  margin-right: 0;
+  color: rgb(86, 86, 86);
+}
+
+p {
+  margin: 0px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(119, 118, 119);
+}
+
+a,
+.purple {
+  font-size: 22px;
+  text-decoration: none;
+  color: rgb(119, 31, 195);
+  transition: 0.4s;
+  
+}
+
+a,
+.gray {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(119, 31, 195);
+  transition: 0.4s;
+}
+
+main {
+  min-height: 60vh;
+}
+
+footer {
+  height: 150px;
+  font-size: 16px;
+  background-color: rgb(24, 24, 24);
+  color: whitesmoke;
+  padding: 2px;
+  text-align: right;
+  font-family: cursive;
+  margin-bottom: -60px;
+}
+h6 {
+  margin-top:12px;
+  margin-bottom:12px;
+  margin-left:0;
+}
+
+button {
+  margin-top:20px;
+  margin-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #BD944A;
+  border-radius: 5px;
+}
+
+input[type=text] {
+  width: 80%;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.form-label {
+  width: 30px;
+}
+
+.radio-label {
+  margin-right: 10px;
+}
+.sig {
+  margin-right: 40px;
+  margin-top:80px;
+}
+
+
+.material-symbols-outlined {
+  vertical-align:middle;
+  font-size: 30px;
+  padding-bottom: 9px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(272, 97%, 35%, 0.301);
+    padding: 3px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .main-area {
+    clear:both;
+    display: block;
+  }
+
+  .event {
+    margin: 6px;
+  }
+  .payment {
+    margin: 6px;
+  }
+
+  .great-vibes-regular {
+    font-size: 40px;
+  }
+
+  .bebas-neue-regular {
+    font-size: 24px;
+  }
+}
+
+.banner {
+  width: 100vw;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.pos-abs-2 {
+  text-shadow: rgb(114, 113, 113) 1px 1px 5px;
+  color: whitesmoke;
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  right: 10px;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+}
+
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 55px;
+}
+
+.ps-2 {
+  padding-left: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.p-3 {
+  padding: 12px;
+}
+
+.p-4 {
+  padding: 18px;
+}
+
+.pt-2 {
+  padding-top: 8px;
+}
+
+.pb-2 {
+  padding-bottom: 8px;
+}
+
+ @media (min-width: 768px) {
+   .main-area {
+     display: flex;
+   }
+   
+   .great-vibes-regular {
+    font-size: 72px;
+   }
+
+   .event {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 6px;
+    min-width: 42vw;
+   }
+
+   .payment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    margin-right: 8px;
+    min-width: 42vw;
+   }
+ }
+
+.event {
+  margin-top: 5%;
+  border: rgba(45, 1, 83, 0.839) 2px solid;
+  border-radius: 10px;
+  min-height: 40vh;
+  
+}
+
+.payment {
+  margin-top: 5%;
+  border: rgba(45, 1, 83, 0.839) 2px solid;
+  border-radius: 10px;
+  min-height: 40vh;
+}
+
+.main-area {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.my-1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: rgb(33, 33, 33);
+}
+
+.top-heading-5 {
+  margin-top: 6px;
+}
+
+.cost {
+  margin-bottom: 14px;
+}
+
+
+
+
