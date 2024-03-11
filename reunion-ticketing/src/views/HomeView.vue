@@ -29,14 +29,14 @@ import Form from '../components/Form.vue';
       <p class="playfair-display">955 Bella Vista Dr, Louisville, Co 80027</p>
       <p class="playfair-display cost">Cost: Free</p>
       
-      <h5>Tour of Monarch High School:</h5>
+      <h5 class="top-heading-5">Tour of Monarch High School:</h5>
       <p class="playfair-display">3:30 PM</p>
       <p class="playfair-display">Monarch High School</p>
       <p class="playfair-display">329 Campus Drive Louisville, CO 80027</p>
       <p class="playfair-display">Thanks goes to Autumn Francis for making this possible</p>
       <p class="playfair-display cost">Cost: Free</p>
       
-      <h5>Evening Event, Adults Only:</h5>
+      <h5 class="top-heading-5">Evening Event, Adults Only:</h5>
       <p class="playfair-display">7:00 - 9:00 PM</p>
       <p class="playfair-display"><a href="https://www.somethingbrewery.com/" target="_blank">Something Brewery</a></p>
       <p class="playfair-display">117 N Main st. Unit A, Brighton CO, 80601</p>
@@ -45,7 +45,7 @@ import Form from '../components/Form.vue';
     </div>
     <div class="payment p-3"> 
       <h3>GET TICKETS FOR THE EVENING EVENT</h3>
-      <h1 class="pt-2 cost">$25</h1>
+      <h1 class="pt-2 date">$25</h1>
       <!-- PUT FORM HERE -->
       <Form />
       
@@ -55,6 +55,7 @@ import Form from '../components/Form.vue';
   <li><p class="my-1 playfair-display"><a href="https://www.simplypizzatruck.com/" target="_blank">Simply Pizza Truck</a> will be there selling pizza.</p>
       <p></p></li>
       <li><p class="my-1 playfair-display">Come celebrate 20 years! We can't wait to see you all!</p></li>
+      <li><p class="my-1 playfair-display">Email us at <a>monarchhighclassof04@gmail.com</a> if you have any questions!</p></li>
 </ul>
     </div>
 

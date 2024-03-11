@@ -1,7 +1,7 @@
 
 
 <template>
-  <h4>Please fill out the info below and a payment link will appear.</h4>
+  <h5 class="top-heading-5">Please fill out the info below and a payment link will appear.</h5>
   <form @submit.prevent="storeAttendee">
         <label for="name">Name</label><br/>
         <input  type="text" required v-model="formData.name"/><br/>

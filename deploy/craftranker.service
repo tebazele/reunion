@@ -1,0 +1,26 @@
+# This gets placed in /etc/systemd/system
+# Then do this:
+#     sudo systemctl enable PROJECT_NAME.service
+#     sudo systemctl start PROJECT_NAME.service
+
+
+[Unit]
+Description=craftranker_uwsgi
+
+[Service]
+WorkingDirectory=/var/www/CraftRanker/backend
+# This is a version that runs on http:
+#ExecStart=/var/www/CraftRanker/backend/venv/bin/uwsgi --http 0.0.0.0:7000 --wsgi-file app.py --callable app --processes 1 --threads 1
+
+# This is the version that runs on uwsgi and logs to /tmp/uwsgi.log.
+ExecStart=/var/www/CraftRanker/backend/venv/bin/uwsgi --socket 127.0.0.1:7000 --wsgi-file app.py --callable app --processes 1 --threads 1 --logto /tmp/uwsgi.log
+
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=craftranker_uwsgi
+User=www-data
+
+[Install]
+WantedBy=multi-user.target
